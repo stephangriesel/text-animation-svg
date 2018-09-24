@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Text Animation Effect</title>
+</head>
+<body>
+    <div id="box"></div>
+    <div id="main">
+        <marquee>Stephan Griesel</marquee>
+    </div>
+
+    <svg>
+        <defs>
+            <filter id="effect">
+                <feTurbulence baseFrequency="0.01" numOctaves="3" Seed="1"/>
+                <feDisplacementMap in="SourceGraphic" Scale="20" />
+            </filter>
+        </defs>
+    </svg>
+</body>
+</html>
